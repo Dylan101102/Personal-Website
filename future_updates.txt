@@ -1,9 +1,0 @@
-Add Javascript functionality to "Submit" button in Contact Me section.
-
-Use Javascript to add a dark mode button.
-
-Further separate headers and it's content.
-
-Mobile friendly.
-
-Work on calculator for quarterly taxes.
