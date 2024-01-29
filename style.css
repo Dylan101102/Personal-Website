@@ -2,11 +2,15 @@
     background-color: aqua;
     padding-bottom: 5px;
     display: flex;
-    flex-direction: column;
+    text-align: center;
 }
 
 .navbar {
     padding: 0;
+}
+
+.navbar-toggler {
+    margin-top: 5px;
 }
 
 .nav-link {
@@ -14,6 +18,10 @@
     font-size: large;
     font-weight: 600;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+.contact-me-text, .description {
+    font-size: large;
 }
 
 h2 {
@@ -26,6 +34,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 #headshot {
@@ -40,8 +49,6 @@ h2 {
     gap: 3rem;
     margin-bottom: 30px;
 }
-
-
 
 .carousel-image {
     height: 450px;
@@ -82,12 +89,12 @@ h5 {
 }
 
 
-.contact {
+.another-contact { 
+    margin-top: 230px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    margin-top: 230px;
+    text-align: center;
 }
 
 
@@ -110,9 +117,64 @@ h5 {
     font-weight: 500;
     margin-bottom: 30px;
 }
-@media (max-width: 991px) {
+
+
+@media (min-width: 769px) { /* Laptops and larger devices. */
     .navigation {
-        flex-direction: row;
+        flex-direction: column;
+    }
+
+    .organization, .fsu, .zaxbys {
+        justify-content: center;
+        margin-right: 200px;
+    }
+
+    .carousel-control-next-icon {
+        margin-top: 70px;
+    }
+
+    .carousel-control-prev-icon {
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 768px) { /* Mobile devices and tablets. */
+
+    .organization, .fsu, .zaxbys {
+        display: flex;
+        flex-direction: column;
         text-align: center;
+    }
+
+    .carousel {
+        width: 400px;
+    }
+
+    .carousel-image {
+        height: 250px;
+    }
+    
+    .carousel-item img {
+        object-fit:scale-down;
+    }
+
+    .carousel-control-next-icon {
+        margin-bottom: 160px;
+    }
+
+    .carousel-control-prev-icon {
+        margin-bottom: 160px;
+    }
+
+    .carousel-indicators {
+        width: 400px;
+    }
+
+    .another-contact {
+        margin-top: 60px;
+    }
+
+    #contact-me { /* Decreasing the width of the text boxes on mobile devices. */
+        width: 250px;
     }
 }
